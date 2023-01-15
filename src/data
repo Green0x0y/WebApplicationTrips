@@ -1,0 +1,214 @@
+
+{"trips":{
+    "trip0":{
+        "key": "trip0",
+        "num":0,
+        "name": "Ciepłe wakacje",
+        "country": "Hiszpania",
+        "price": 600,
+        "max": 20,
+        "description": "Lorem ipsum dolor sit amet. Et recusandae cupnumitate est adipisci nihil num labore molestiae. Eum laborum adipisci eos laborum vero ut sunt doloribus sit officia nulla. ",
+        "currentStars": 2,
+        "ratings": [2],
+        "chosen": 0,
+        "photo":"https://images5.alphacoders.com/126/thumbbig-1262642.webp",
+        "reviews": [{
+            "yourNick": {"type": "string"},
+            "tripName": {"type": "string"},
+            "opinion": {"type": "string"},
+            "date": {"type": "string"}
+    }]
+    
+    },
+    "trip1":{
+        "key": "trip1",
+        "num":1,
+        "name": "Wakacje w górach",
+        "country": "Szwajcaria",
+        "price": 300,
+        "max": 40,
+        "description": "Lorem ipsum dolor sit amet. Et recusandae cupnumitate est adipisci nihil num labore molestiae. Eum laborum adipisci eos laborum vero ut sunt doloribus sit officia nulla. ",
+        "currentStars": 3,
+        "ratings": [3],
+        "chosen": 0,
+        "photo":"https://images3.alphacoders.com/126/thumbbig-1261900.webp",
+        "reviews": [{
+            "yourNick": {"type": "string"},
+            "tripName": {"type": "string"},
+            "opinion": {"type": "string"},
+            "date": {"type": "string"}
+    }]
+    },
+    "trip2":{
+        "key": "trip2",
+        "num":2,
+        "name": "Poznaj kulturę Japonii",
+        "country": "Japonia",
+        "price": 1500,
+        "max": 30,
+        "description": "Lorem ipsum dolor sit amet. Et recusandae cupnumitate est adipisci nihil num labore molestiae. Eum laborum adipisci eos laborum vero ut sunt doloribus sit officia nulla. ",
+        "currentStars": 4,
+        "ratings": [4],
+        "chosen": 0,
+        "photo":"https://images5.alphacoders.com/518/thumbbig-518518.webp",
+        "reviews": [{
+            "yourNick": {"type": "string"},
+            "tripName": {"type": "string"},
+            "opinion": {"type": "string"},
+            "date": {"type": "string"}
+    }]
+    },
+    "trip3":{
+        "key": "trip3",
+        "num":3,
+        "name": "Romantyczna wycieczka",
+        "country": "Francja",
+        "price": 450,
+        "max": 10,
+        "description": "Lorem ipsum dolor sit amet. Et recusandae cupnumitate est adipisci nihil num labore molestiae. Eum laborum adipisci eos laborum vero ut sunt doloribus sit officia nulla. ",
+        "currentStars": 0,
+        "ratings": [0],
+        "chosen": 0,
+        "photo":"https://images5.alphacoders.com/284/thumbbig-284379.webp",
+        "reviews": [{
+            "yourNick": {"type": "string"},
+            "tripName": {"type": "string"},
+            "opinion": {"type": "string"},
+            "date": {"type": "string"}
+    }]
+    },
+    "trip4":{
+        "key": "trip4",
+        "num":4,
+        "name": "Przygoda życia",
+        "country": "Zambia",
+        "price": 1700,
+        "max": 50,
+        "description": "Lorem ipsum dolor sit amet. Et recusandae cupnumitate est adipisci nihil num labore molestiae. Eum laborum adipisci eos laborum vero ut sunt doloribus sit officia nulla. ",
+        "currentStars": 1,
+        "ratings": [1],
+        "chosen": 0,
+        "photo":"https://images.alphacoders.com/107/thumbbig-1076928.webp",
+        "reviews": [{
+            "yourNick": {"type": "string"},
+            "tripName": {"type": "string"},
+            "opinion": {"type": "string"},
+            "date": {"type": "string"}
+    }]
+    },
+    "trip5":{
+        "key": "trip5",
+        "num":5,
+        "name": "Tajemnice Ameryki Południowej",
+        "country": "Brazylia",
+        "price": 2100,
+        "max": 20,
+        "description": "Lorem ipsum dolor sit amet. Et recusandae cupnumitate est adipisci nihil num labore molestiae. Eum laborum adipisci eos laborum vero ut sunt doloribus sit officia nulla. ",
+        "currentStars": 3,
+        "ratings": [3],
+        "chosen": 0,
+        "photo":"https://images2.alphacoders.com/536/thumbbig-536257.webp",
+        "reviews": [{
+            "yourNick": {"type": "string"},
+            "tripName": {"type": "string"},
+            "opinion": {"type": "string"},
+            "date": {"type": "string"}
+    }]
+    },
+    "trip6":{
+        "key": "trip6",
+        "num":6,
+        "name": "Wycieczka VIP Los Angeles",
+        "country":  "USA",
+        "price": 2500,
+        "max": 25,
+        "description": "Lorem ipsum dolor sit amet. Et recusandae cupnumitate est adipisci nihil num labore molestiae. Eum laborum adipisci eos laborum vero ut sunt doloribus sit officia nulla. ",
+        "currentStars": 5,
+        "ratings": [5],
+        "chosen": 0,
+        "photo":"https://images6.alphacoders.com/581/thumbbig-581153.webp",
+        "reviews": [{
+            "yourNick": {"type": "string"},
+            "tripName": {"type": "string"},
+            "opinion": {"type": "string"},
+            "date": {"type": "string"}
+    }]
+    },
+    "trip7":{
+        "key": "trip7",
+        "num":7,
+        "name": "Wyjątkowe wyspy",
+        "country":  "Indonezja",
+        "price": 2200,
+        "max": 50,
+        "description": "Lorem ipsum dolor sit amet. Et recusandae cupnumitate est adipisci nihil num labore molestiae. Eum laborum adipisci eos laborum vero ut sunt doloribus sit officia nulla. ",
+        "currentStars": 5,
+        "ratings": [5],
+        "chosen": 0,
+        "photo":"https://images7.alphacoders.com/542/thumbbig-542467.webp",
+        "reviews": [{
+            "yourNick": {"type": "string"},
+            "tripName": {"type": "string"},
+            "opinion": {"type": "string"},
+            "date": {"type": "string"}
+    }]
+    },
+    "trip8":{
+        "key": "trip8",
+        "num":8,
+        "name": "Zwiedzaj Londyn",
+        "country":"Wielka Brytania",
+        "price": 700,
+        "max": 35,
+        "description": "Lorem ipsum dolor sit amet. Et recusandae cupnumitate est adipisci nihil num labore molestiae. Eum laborum adipisci eos laborum vero ut sunt doloribus sit officia nulla. ",
+        "currentStars": 2,
+        "ratings": [2],
+        "chosen": 0,
+        "photo":"https://images5.alphacoders.com/404/thumbbig-404262.webp",
+        "reviews": [{
+            "yourNick": {"type": "string"},
+            "tripName": {"type": "string"},
+            "opinion": {"type": "string"},
+            "date": {"type": "string"}
+    }]
+    },
+    "trip9":{
+        "key": "trip9",
+        "num":5,
+        "name": "Gorące wczasy",
+        "country": "Turcja",
+        "price": 500,
+        "max": 25,
+        "description": "Lorem ipsum dolor sit amet. Et recusandae cupnumitate est adipisci nihil num labore molestiae. Eum laborum adipisci eos laborum vero ut sunt doloribus sit officia nulla. ",
+        "currentStars": 4,
+        "ratings": [4],
+        "chosen": 0,
+        "photo":"https://images6.alphacoders.com/127/thumbbig-1279674.webp",
+        "reviews": [{
+            "yourNick": {"type": "string"},
+            "tripName": {"type": "string"},
+            "opinion": {"type": "string"},
+            "date": {"type": "string"}
+    }]
+    },
+    "trip10":{
+        "key": "trip10",
+        "num":10,
+        "name": "Wspaniałe potrawy",
+        "country": "Włochy",
+        "price": 550,
+        "max": 15,
+        "description": "Lorem ipsum dolor sit amet. Et recusandae cupnumitate est adipisci nihil num labore molestiae. Eum laborum adipisci eos laborum vero ut sunt doloribus sit officia nulla. ",
+        "currentStars": 1,
+        "ratings": [1],
+        "chosen": 0,
+        "photo":"https://images4.alphacoders.com/959/thumbbig-95964.webp",
+        "reviews": [{
+            "yourNick": {"type": "string"},
+            "tripName": {"type": "string"},
+            "opinion": {"type": "string"},
+            "date": {"type": "string"}
+    }]
+    }
+}
+}
