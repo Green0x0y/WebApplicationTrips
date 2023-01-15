@@ -1,0 +1,381 @@
+{
+    "persistence": {
+      "state": "session"
+    },
+    "trips": {
+      "trip0": {
+        "chosen": 0,
+        "country": "Hiszpania",
+        "currentStars": 2,
+        "description": "Lorem ipsum dolor sit amet. Et recusandae cupnumitate est adipisci nihil num labore molestiae. Eum laborum adipisci eos laborum vero ut sunt doloribus sit officia nulla. ",
+        "key": "trip0",
+        "max": 20,
+        "name": "Ciepłe wakacje",
+        "num": 0,
+        "photo": "https://images5.alphacoders.com/126/thumbbig-1262642.webp",
+        "price": 600,
+        "ratings": [
+          2
+        ],
+        "reviews": [
+          {
+            "date": {
+              "type": "string"
+            },
+            "opinion": {
+              "type": "string"
+            },
+            "tripName": {
+              "type": "string"
+            },
+            "yourNick": {
+              "type": "string"
+            }
+          }
+        ]
+      },
+      "trip1": {
+        "chosen": 0,
+        "country": "Szwajcaria",
+        "currentStars": 3,
+        "description": "Lorem ipsum dolor sit amet. Et recusandae cupnumitate est adipisci nihil num labore molestiae. Eum laborum adipisci eos laborum vero ut sunt doloribus sit officia nulla. ",
+        "key": "trip1",
+        "max": 40,
+        "name": "Wakacje w górach",
+        "num": 1,
+        "photo": "https://images3.alphacoders.com/126/thumbbig-1261900.webp",
+        "price": 300,
+        "ratings": [
+          3
+        ],
+        "reviews": [
+          {
+            "date": {
+              "type": "string"
+            },
+            "opinion": {
+              "type": "string"
+            },
+            "tripName": {
+              "type": "string"
+            },
+            "yourNick": {
+              "type": "string"
+            }
+          }
+        ]
+      },
+      "trip10": {
+        "chosen": 0,
+        "country": "Włochy",
+        "currentStars": 1,
+        "description": "Lorem ipsum dolor sit amet. Et recusandae cupnumitate est adipisci nihil num labore molestiae. Eum laborum adipisci eos laborum vero ut sunt doloribus sit officia nulla. ",
+        "key": "trip10",
+        "max": 15,
+        "name": "Wspaniałe potrawy",
+        "num": 10,
+        "photo": "https://images4.alphacoders.com/959/thumbbig-95964.webp",
+        "price": 550,
+        "ratings": [
+          1
+        ],
+        "reviews": [
+          {
+            "date": {
+              "type": "string"
+            },
+            "opinion": {
+              "type": "string"
+            },
+            "tripName": {
+              "type": "string"
+            },
+            "yourNick": {
+              "type": "string"
+            }
+          }
+        ]
+      },
+      "trip2": {
+        "chosen": 0,
+        "country": "Japonia",
+        "currentStars": 3,
+        "description": "Lorem ipsum dolor sit amet. Et recusandae cupnumitate est adipisci nihil num labore molestiae. Eum laborum adipisci eos laborum vero ut sunt doloribus sit officia nulla. ",
+        "key": "trip2",
+        "max": 30,
+        "name": "Wczasy",
+        "num": 2,
+        "photo": "https://images5.alphacoders.com/518/thumbbig-518518.webp",
+        "price": 1500,
+        "ratings": [
+          4,
+          3,
+          3
+        ],
+        "reviews": [
+          {
+            "date": {
+              "type": "string"
+            },
+            "opinion": {
+              "type": "string"
+            },
+            "tripName": {
+              "type": "string"
+            },
+            "yourNick": {
+              "type": "string"
+            }
+          }
+        ]
+      },
+      "trip3": {
+        "chosen": 0,
+        "country": "Francja",
+        "currentStars": 2,
+        "description": "Lorem ipsum dolor sit amet. Et recusandae cupnumitate est adipisci nihil num labore molestiae. Eum laborum adipisci eos laborum vero ut sunt doloribus sit officia nulla. ",
+        "key": "trip3",
+        "max": 10,
+        "name": "Romantyczna wycieczka",
+        "num": 3,
+        "photo": "https://images5.alphacoders.com/284/thumbbig-284379.webp",
+        "price": 450,
+        "ratings": [
+          0,
+          3,
+          4
+        ],
+        "reviews": [
+          {
+            "date": {
+              "type": "string"
+            },
+            "opinion": {
+              "type": "string"
+            },
+            "tripName": {
+              "type": "string"
+            },
+            "yourNick": {
+              "type": "string"
+            }
+          }
+        ]
+      },
+      "trip4": {
+        "chosen": 0,
+        "country": "Zambia",
+        "currentStars": 4,
+        "description": "Lorem ipsum dolor sit amet. Et recusandae cupnumitate est adipisci nihil num labore molestiae. Eum laborum adipisci eos laborum vero ut sunt doloribus sit officia nulla. ",
+        "key": "trip4",
+        "max": 24,
+        "name": "Jakas wycieczka",
+        "num": 4,
+        "photo": "https://images.alphacoders.com/107/thumbbig-1076928.webp",
+        "price": 1700,
+        "ratings": [
+          1,
+          3,
+          3
+        ],
+        "reviews": [
+          {
+            "date": {
+              "type": "string"
+            },
+            "opinion": {
+              "type": "string"
+            },
+            "tripName": {
+              "type": "string"
+            },
+            "yourNick": {
+              "type": "string"
+            }
+          }
+        ]
+      },
+      "trip5": {
+        "chosen": 0,
+        "country": "Brazylia",
+        "currentStars": 3,
+        "description": "Lorem ipsum dolor sit amet. Et recusandae cupnumitate est adipisci nihil num labore molestiae. Eum laborum adipisci eos laborum vero ut sunt doloribus sit officia nulla. ",
+        "key": "trip5",
+        "max": 20,
+        "name": "Tajemnice Ameryki Południowej",
+        "num": 5,
+        "photo": "https://images2.alphacoders.com/536/thumbbig-536257.webp",
+        "price": 2100,
+        "ratings": [
+          3
+        ],
+        "reviews": [
+          {
+            "date": {
+              "type": "string"
+            },
+            "opinion": {
+              "type": "string"
+            },
+            "tripName": {
+              "type": "string"
+            },
+            "yourNick": {
+              "type": "string"
+            }
+          }
+        ]
+      },
+      "trip6": {
+        "chosen": 0,
+        "country": "USA",
+        "currentStars": 5,
+        "description": "Lorem ipsum dolor sit amet. Et recusandae cupnumitate est adipisci nihil num labore molestiae. Eum laborum adipisci eos laborum vero ut sunt doloribus sit officia nulla. ",
+        "key": "trip6",
+        "max": 25,
+        "name": "Wycieczka VIP Los Angeles",
+        "num": 6,
+        "photo": "https://images6.alphacoders.com/581/thumbbig-581153.webp",
+        "price": 2500,
+        "ratings": [
+          5
+        ],
+        "reviews": [
+          {
+            "date": {
+              "type": "string"
+            },
+            "opinion": {
+              "type": "string"
+            },
+            "tripName": {
+              "type": "string"
+            },
+            "yourNick": {
+              "type": "string"
+            }
+          }
+        ]
+      },
+      "trip7": {
+        "chosen": 0,
+        "country": "Indonezja",
+        "currentStars": 5,
+        "description": "Lorem ipsum dolor sit amet. Et recusandae cupnumitate est adipisci nihil num labore molestiae. Eum laborum adipisci eos laborum vero ut sunt doloribus sit officia nulla. ",
+        "key": "trip7",
+        "max": 50,
+        "name": "Wyjątkowe wyspy",
+        "num": 7,
+        "photo": "https://images7.alphacoders.com/542/thumbbig-542467.webp",
+        "price": 2200,
+        "ratings": [
+          5
+        ],
+        "reviews": [
+          {
+            "date": {
+              "type": "string"
+            },
+            "opinion": {
+              "type": "string"
+            },
+            "tripName": {
+              "type": "string"
+            },
+            "yourNick": {
+              "type": "string"
+            }
+          }
+        ]
+      },
+      "trip8": {
+        "chosen": 0,
+        "country": "Wielka Brytania",
+        "currentStars": 2,
+        "description": "Lorem ipsum dolor sit amet. Et recusandae cupnumitate est adipisci nihil num labore molestiae. Eum laborum adipisci eos laborum vero ut sunt doloribus sit officia nulla. ",
+        "key": "trip8",
+        "max": 35,
+        "name": "Zwiedzaj Londyn",
+        "num": 8,
+        "photo": "https://images5.alphacoders.com/404/thumbbig-404262.webp",
+        "price": 700,
+        "ratings": [
+          2
+        ],
+        "reviews": [
+          {
+            "date": {
+              "type": "string"
+            },
+            "opinion": {
+              "type": "string"
+            },
+            "tripName": {
+              "type": "string"
+            },
+            "yourNick": {
+              "type": "string"
+            }
+          }
+        ]
+      }
+    },
+    "users": {
+      "9RVlZSIdHuXB3aHFUh69gFYxwIb2": {
+        "banned": false,
+        "email": "mmm@mmm.com",
+        "type": 1,
+        "history": [{
+          "id": 1,
+          "name": "Wakacje w górach",
+          "rated": false,
+          "rating": null
+  
+        }
+          
+        ]
+      },
+      "DUUzSowDYUQ4BFLs8aFOQHQvFPV2": {
+        "banned": false,
+        "email": "login@login.com",
+        "type": 0,
+        "history": [{
+          "id": 1,
+          "name": "Wakacje w górach",
+          "rated": false,
+          "rating": null
+  
+        },
+        {
+            "id": 3,
+            "name": "Romantyczna wycieczka",
+            "rated": false,
+            "rating": null
+    
+          },
+        
+          {
+            "id": 5,
+            "name": "Tajemnice Ameryki Południowej",
+            "rated": false,
+            "rating": null
+    
+          }]
+      },
+      "GwTF9cCiFnOXonT0T9cjPgHLqGa2": {
+        "banned": false,
+        "email": "admin@admin.com",
+        "type": 2
+      },
+      "M6h2QQgJCGTS6VcNvz3V8gprovf1": {
+        "banned": true,
+        "email": "ban@ban.com",
+        "type": 0
+      },
+      "erCct8xSypbJdLhGmtBgjn6wDRt1": {
+        "banned": false,
+        "email": "aaa@aaa.com",
+        "type": 0
+      }
+    }
+  }
