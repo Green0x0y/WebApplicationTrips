@@ -1,0 +1,135 @@
+
+  .back {
+    position: absolute;
+    left:5vw;
+    top: 25vh;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    border-radius: 10px;
+    border:none;
+    background-color: rgb(128, 128, 128);
+    color:white;
+    font-size: 150%;
+    cursor: pointer;
+   
+  }
+
+  .container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+    
+  }
+  .desc {
+    display: flex;
+    flex-direction: column;
+    border: 20px solid rgb(65, 58, 161);
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    padding: 2%;
+    border-radius: 25px;
+    height: fit-content;
+    width: 50%;
+    padding:5%;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 10px 10px 20px -10px rgb(1, 1, 2);
+    font-size: 120%;
+    font-weight: bold;
+  }
+  
+  .photo {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    margin:2%;
+    box-shadow: 10px 10px 20px -10px rgb(1, 1, 2);
+  }
+  
+  .change-pic-l, .change-pic-r {
+    border: none;
+    color: white;
+    font-size: 200%;
+    width: 10%;
+    cursor: pointer;
+  }
+  .change-pic-l{
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+  .change-pic-r{
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  .photo > img {
+    width: 80%;
+    height: 100%;
+   
+  }
+  
+  .plus-minus {
+    display: flex;
+    flex-direction: row;
+    margin-top:2%;
+    width: 100%;
+    justify-content: space-evenly;
+    
+    
+    
+  }
+  .plus, .minus{
+    border-radius: 5px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 200%;
+    width:80px;
+    height:80px;
+  }
+  .plus {
+    background-color: rgb(36, 245, 46);
+  }
+  
+  .minus {
+    background-color: rgb(214, 57, 57);
+  }
+
+  .rate{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+
+  }
+  
+  .stars {
+    width: 50%;
+    height: 50%;
+    margin-left:6%;
+  }
+  
+  .stars > img {
+    width: 50%;
+    height: 50%;
+    cursor: pointer;
+  }
+
+@media screen and (max-width: 1000px){
+  .desc{
+    width: 80%;
+  }
+  .back{
+    position: relative;
+    left: 0;
+    top: 0;
+    margin-bottom:1%;
+    padding: 1%;
+    width:60vw;
+
+  }
+  .container{
+    flex-flow: column;
+  }
+}

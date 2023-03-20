@@ -1,0 +1,134 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family:Arial, Helvetica, sans-serif
+  }
+  
+.card-trip {
+  height: 46em;
+  width:100%;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(233, 233, 233);
+  border: 15px solid rgb(65, 58, 161);
+  border-radius: 20px;
+  box-shadow: 10px 10px 20px -10px rgb(1, 1, 2);
+  
+  }
+h2{
+  color:rgb(0, 0, 0);
+}
+.country{
+  text-align: center;
+  color:rgb(93, 93, 93);
+  font-weight: bold;
+}
+.buy, .delete, .trip-delete{
+  cursor: pointer;
+  font-size: 200%;
+  color: white;
+  background-color: rgb(111, 111, 111);
+  border-radius: 5px;
+  border-color:transparent;
+  transition: ease 0.2s;
+
+}
+.trip-delete{
+  padding:2%;
+  background-color:rgb(255, 255, 255);
+}
+.trip-delete>img{
+  width:80%;
+  height:auto;
+
+}
+.cost{
+  display: flex;
+  justify-content: center;
+  padding: 3%;
+  font-size: 120%;
+  color:rgb(93, 93, 93);
+}
+.checked{
+  color:white;
+}
+.name{
+  margin:auto;
+  text-align: center;
+  font-size:160%;
+}
+.trip-picture>img{
+  position: relative;
+  left: 20%;
+  width: 60%;
+  height:150%;
+  border-radius: 100%;
+  object-fit: cover;
+  padding: 1%;
+}
+.desc{
+  padding:4%;
+  color:rgb(93, 93, 93);
+}
+.row-buttons{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+button{
+  width: 20%;
+  margin:3%;
+  box-shadow: 10px 10px 20px -10px rgb(1, 1, 2);
+}
+.checked{
+  width:20%;
+  margin:3%;
+  display: flex;
+  justify-content: center;
+  align-items:  center;
+  border-radius: 5px;
+}
+.no-tickets{
+  color:black;
+  font: bold;
+  align-self: center;
+}
+.stars-num{
+  position:relative;
+  left:25%;
+
+}
+.star-img{
+  width:10%;
+  cursor:pointer;
+  
+}
+.edit {
+    cursor: pointer;
+    font-size: 200%;
+    color: white;
+    background-color: rgb(73, 63, 162);
+    border: 0;
+    width:95%;
+    border-radius:10px;
+    
+   
+  }
+  
+@media screen and (max-width: 1000px){
+  .card-trip{
+    height: 44em;
+  }
+  .trip-picture>img{
+    left:25%;
+    width: 50%;
+    height:150%;
+  }
+}
+@media screen and(min-width: 1200px){
+  .trip-picture>img{
+    width: 40%;
+    height:90%;
+  }
+}

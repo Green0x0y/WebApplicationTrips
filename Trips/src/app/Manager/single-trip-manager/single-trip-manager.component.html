@@ -1,0 +1,21 @@
+<div class="container">
+    <button routerLink="/manager" routerLinkActive="active">Powrót</button>
+    <div class="about">
+      <h1>Wycieczka</h1>
+      <p class= "title">Nazwa wycieczki: </p>
+      <p class="elem"> {{trip.name}}</p>
+      <p class= "title">Kraj: </p>
+      <p class="elem">{{trip.country}}</p>
+      <p class= "title">Ilość biletów: </p>
+      <p class="elem"> {{trip.max}}</p>
+      <p class= "title">Cena: </p>
+      <p class="elem"> {{(trip.price * changeCurrencyService.money[changeCurrencyService.moneyNow].multiply).toFixed(2)}}
+        {{changeCurrencyService.money[changeCurrencyService.moneyNow].sign}}</p>
+        <p class= "title">Ocena: </p>
+      <p class="elem">{{trip.currentStars}}</p>
+      <p class= "title">Opis: </p>
+      <p class="elem"> {{trip.description}}</p>
+      
+    </div>
+    <app-change-trip class="edit-form" [trip]="trip"></app-change-trip>
+  </div>

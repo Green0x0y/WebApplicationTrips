@@ -1,0 +1,14 @@
+<div class="container">
+    <h1>Użytkownicy</h1>
+    <div class="users" *ngFor="let user of users">
+      <p class="email">{{user.email}}</p>
+      <div class="options">
+        
+        <button *ngIf="user.type != 0" (click)="userService.makeClient(user)">Usuń nadane role</button>
+        <button *ngIf="user.type != 1" (click)="userService.makeManager(user)">Nadaj rolę managera</button>
+        <button  *ngIf="user.type != 2" (click)="userService.makeAdmin(user)">Nadaj rolę admina</button>
+        <button *ngIf="user.banned" (click)="userService.onOfBan(user, false)">Usuń bana</button>
+        <button *ngIf="!user.banned" (click)="userService.onOfBan(user, true)">Zbanuj</button>
+      </div>
+    </div>
+  </div>

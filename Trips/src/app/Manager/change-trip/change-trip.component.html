@@ -1,0 +1,39 @@
+<form class="container" [formGroup]="changedTrip" (ngSubmit)="onSubmit()">
+    <h1>Edycja wycieczki</h1>
+    <div class="elem">
+        <label >Nazwa wycieczki: </label>
+        <input formControlName="name">
+       <p class="changedTrip-form-alert" *ngIf="changedTrip.get('name')!.hasError('pattern') &&(changedTrip.get('name')!.touched )">Nieprawidłowe znaki</p>
+      <p class="changedTrip-form-alert" *ngIf="changedTrip.get('name')!.hasError('duplicateName') &&(changedTrip.get('name')!.touched )">Istnieje wycieczka o danej nazwie</p>
+    </div>
+    
+    <div class="elem">
+        <label >Kraj: </label>
+        <input  formControlName="country">
+      <p class="changedTrip-form-alert" *ngIf="changedTrip.get('country')!.hasError('pattern') &&
+        (changedTrip.get('country')!.touched )">Nieprawidłowe znaki</p>
+    </div>
+   
+    <div class="elem">
+      <label >Cena: (EURO)</label>
+      <input  formControlName="price">
+      <p class="changedTrip-form-alert" *ngIf="changedTrip.get('price')!.hasError('min') &&
+        (changedTrip.get('price')!.touched)">Cena musi być większa niż 1</p>
+      <p class="changedTrip-form-alert" *ngIf="changedTrip.get('price')!.hasError('max') &&
+        (changedTrip.get('price')!.touched)">Cena musi być mniejza niż 12500</p>
+    </div>
+     
+    <div class="elem">
+      <label for="description">Opis: </label>
+      <input id="description" type="text" formControlName="description">
+      <p *ngIf="changedTrip.get('description')!.hasError('minlength') && (changedTrip.get('description')!.touched)">Opis jest za krótki</p>
+    </div>
+    <div class="elem">
+      <label >Ilość: </label>
+      <input  formControlName="maxAmount">
+      <p class="changedTrip-form-alert" *ngIf="changedTrip.get('max')!.hasError('min') &&(changedTrip.get('max')!.touched)">Liczba miejsc musi być dodatnia</p>
+    </div>
+    <div class ="elem">
+      <button [disabled]="!changedTrip.valid">Zaktualizuj</button>
+    </div>
+  </form>

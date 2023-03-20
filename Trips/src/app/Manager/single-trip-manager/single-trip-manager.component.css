@@ -1,0 +1,78 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family:Arial, Helvetica, sans-serif;
+  }
+  
+  .container {
+    margin: 1%;
+    display: flex;
+    gap: 2%;
+    flex-direction: row;
+    margin-top: 2%;
+    
+  }
+  
+  .container > button {
+    border: 0;
+    border-radius: 15px;
+    background-color: rgb(73, 63, 162);
+    color: white;
+    font-size: 150%;
+    padding: 1%;
+    cursor: pointer;
+    box-shadow: 10px 10px 20px -10px rgb(1, 1, 2);
+  }
+  h1{
+    text-align: center;
+    font:120%;
+  }
+
+  .about {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(73, 63, 162);
+    border: 20px solid rgb(65, 58, 161);
+    color: white;
+    padding: 2%;
+    border-radius: 15px;
+    height: fit-content;
+    width: 45%;
+    gap: 5px;
+    box-shadow: 10px 10px 20px -10px rgb(1, 1, 2);
+    height:100%;
+  }
+  
+  .elem{
+    background-color: white;
+    color:black;
+    font-weight: bold;
+    padding: 1%;
+    border-radius: 5px;
+    box-shadow: 10px 10px 20px -10px rgb(1, 1, 2);
+    padding:2%;
+    margin:3%;
+    margin-top:1%;
+  }
+  .title{
+    width:100%;
+    text-align: center;
+    font-size: 120%;
+    margin-top:2%;
+  }
+  
+  .edit-form {
+    width: 45%;
+  }
+  @media screen and (max-width: 1000px){
+    .container {flex-direction: column;}
+    .about{
+      width:98%;
+      margin:2%
+    }
+    .edit-form{
+      width:98%;
+      margin-left:4%;
+    }
+  }

@@ -1,0 +1,38 @@
+<div class="container">
+  <div class="pic">
+    <button class = "back" routerLink="/trips" routerLinkActive="active">Powrót</button>
+    </div>
+    <div class="desc">
+      <div class="photo">
+        <button class="change-pic-l"></button>
+        <img [src]="trip.photo" >
+        <button class="change-pic-r"></button>
+      </div>
+      <h1>{{trip.name}}</h1>
+      <p>Kraj: {{trip.country}}</p>
+      <p>Wybrano: {{trip.chosen}}</p>
+      <p>Dostępne miejsca: {{trip.max - trip.chosen}}</p>
+      <p>Cena: {{(trip.price * changeCurrencyService.money[changeCurrencyService.moneyNow].multiply).toFixed(2)}}
+        {{changeCurrencyService.money[changeCurrencyService.moneyNow].sign}}</p>
+      <p>Ocena: {{trip.currentStars}}  (Liczba ocen: {{trip.ratings.length}})</p>
+      <p>Opis wycieczki: <br> {{trip.description}}</p>
+      <p>Oceń wycieczkę: </p>
+      <div class="rate">
+        <div class="stars" *ngFor="let elem of possibleRatings">
+          <img [src]="ratedOnce && currentStars >= elem ? '../../assets/img/star_minus.png' : '../../assets/img/star_plus.png'"
+               (click)="rate(trip, elem)">
+        </div>
+      </div>
+      <div class="plus-minus">
+        <button class="plus" (click)="changeCurrencyService.buy(trip)" [hidden]="!isInStock(trip)">+</button>
+        <button class="minus" (click)="changeCurrencyService.delete(trip)">-</button>
+      </div>
+      <p class="error" *ngIf="error == 1">Manager nie może oceniać wycieczek</p>
+    <p class="error" *ngIf="error == 2">Zbanowani klienci nie mogą oceniać wycieczek</p>
+    <p class="error" *ngIf="error == 3">Zamów wycieczkę aby móc ocenić</p>
+    <p class="error" *ngIf="error == 4">Możesz ocenić wyieczkę tylko raz</p>
+    </div>
+    
+    </div>
+   <app-add-review [trip]="trip"></app-add-review>
+  

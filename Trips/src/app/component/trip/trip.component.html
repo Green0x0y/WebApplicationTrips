@@ -1,0 +1,26 @@
+<div class="card-trip" [ngStyle]="{'background-color': (trip.max-trip.chosen) < 3 ? 'grey' : null}">
+  <picture class="trip-picture">
+    <img src="{{trip.photo}}" [routerLink]="['/trip/', trip.num]" routerLinkActive="active">
+  </picture>
+  <h2 class="name">{{trip.name | uppercase }}</h2>
+  <p class="country">{{trip.country | uppercase}}</p>
+  <p class="cost">
+    {{(trip.price * changeCurrencyService.money[changeCurrencyService.moneyNow].multiply).toFixed(2)}}
+    {{changeCurrencyService.money[changeCurrencyService.moneyNow].sign}}</p>
+  <p class="no-tickets" [hidden]="(trip.max-trip.chosen) > 0">Brak Biletów </p>
+  <!--<div class ="dates"> OD: {{trip.startDate}}  DO: {{trip.endDate}}</div> -->
+  <div class="desc">{{trip.description}}</div>
+  <div class = "row-buttons">
+    <button class="delete" (click)="changeCurrencyService.delete(trip)"> - </button>
+    <button class="buy"  (click)="changeCurrencyService.buy(trip)" [hidden]="last(trip)" >+</button>
+    <p class="checked" [ngStyle]="{'background-color': trip.chosen >= 10? 'lime' : 'orangered'}">{{trip.chosen}}</p>
+    
+    
+  </div>  
+  <div class="stars-num">
+    <span *ngFor="let elem of possibleRating">
+      <img class="star-img"
+           [src]="trip.currentStars >= elem ? '../../assets/img/star_minus.png' : '../../assets/img/star_plus.png'">
+    </span>
+  </div>
+</div>

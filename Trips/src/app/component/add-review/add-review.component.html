@@ -1,0 +1,44 @@
+<div class="container">
+    <form class="options" [formGroup]="review" (ngSubmit)="send()">
+
+      <label for="nick">Nick:</label>
+      <input formControlName="yourNick">
+      <p  *ngIf="review.get('yourNick')!.hasError('required') &&
+          (review.get('yourNick')!.touched)">Nie podano nicku</p>
+      
+      <label >Data:</label>
+      <input type="date" formControlName="date">
+
+      <label>Nazwa wycieczki</label>
+      <input formControlName="tripName">
+      <p  *ngIf="(review.get('tripName')!.touched) &&
+          review.get('tripName')!.hasError('required') ">Nie podano nazwy wycieczki</p>
+
+
+      <label >Twoja Opinia</label>
+      <input  id="opinion-input" formControlName="opinion">
+      
+      <p *ngIf="review.get('opinion')!.hasError('minlength') && (review.get('opinion')!.touched )">Musisz podać conajmniej 50 znaków</p>
+      <p *ngIf="review.get('opinion')!.hasError('maxlength') && (review.get('opinion')!.touched)">Opinia nie może być dłuższa niż 500 znaków</p>
+      <p *ngIf="review.get('opinion')!.hasError('required') && (review.get('opinion')!.touched)">Nie wpisano opinii</p>
+
+      <button type="submit" [disabled]="review.valid == false">Dodaj opinię</button>
+      <p class="error" *ngIf="this.error == 1">Zbanowani klienci nie mogą oceniać wycieczek</p>
+       <p class="error" *ngIf="this.error == 2">Zamów wycieczkę aby móc ocenić</p>
+    </form>
+
+    <div class="prev-reviews">
+      
+      <h1>Opinie:</h1>
+      <div class="rev-boxes">
+        <div class="elem" *ngFor="let box of trip.reviews | slice: 1 ">
+          <div class="top">
+            <h3>{{box.tripName}}</h3>
+            <h3 id = "right-corner">{{box.yourNick}}</h3>
+          </div>
+          <h3>{{box.date}}</h3>
+          <p>{{box.opinion}}</p>
+        </div>
+      </div>
+    </div>
+  </div>

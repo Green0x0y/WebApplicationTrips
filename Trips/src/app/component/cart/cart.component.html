@@ -1,0 +1,14 @@
+<div class="cart">
+  <h3>Koszyk</h3>
+  <div class ="details">
+        Łączna wartość wycieczek:
+        {{changeCurrencyService.sumCost()*changeCurrencyService.money[changeCurrencyService.moneyNow].multiply + changeCurrencyService.money[changeCurrencyService.moneyNow].sign}}
+        <br>
+        Łączna ilość biletów:
+        {{changeCurrencyService.sumCount()}}
+      </div>
+     
+  <div class = "trip" *ngFor="let elem of changeCurrencyService.cart">
+        {{elem.num}} x {{elem.name}}
+  </div>
+  </div>

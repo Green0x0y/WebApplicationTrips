@@ -1,0 +1,43 @@
+
+<form [formGroup]="addTripForm" (ngSubmit)="submit()">
+    <div class="new-trip">
+      <h2>Dodaj nową wycieczkę</h2>
+      <div class="trip-info">
+          <label for="name">NAZWA </label>
+          <input type="text" formControlName="name">
+        <p *ngIf="addTripForm.get('name')!.hasError('required') && (addTripForm.get('name')!.touched)">Podaj nazwę wycieczki</p>
+        <p *ngIf="addTripForm.get('name')!.hasError('pattern') && (addTripForm.get('name')!.touched)">Nieprawidłowe znaki</p>
+        <p *ngIf="addTripForm.get('name')!.hasError('minlength') && (addTripForm.get('name')!.touched)">Nazwa jest za krótka</p>
+      </div>
+      <div class="trip-info">
+          <label for="country">KRAJ</label>
+          <input type="text" formControlName="country">
+        <p *ngIf="addTripForm.get('country')!.hasError('required') && (addTripForm.get('country')!.touched)">Podaj nazwę kraju</p>
+        <p  *ngIf="addTripForm.get('country')!.hasError('pattern') && (addTripForm.get('country')!.touched)">Nieprawidłowe znaki</p>
+      </div>
+      <div class="trip-info">
+          <label for="max">ILOŚĆ </label>
+          <input type="number" formControlName="max">
+        <p *ngIf="addTripForm.get('max')!.hasError('required') && (addTripForm.get('max')!.touched)">Podaj liczbę biletów</p>
+        <p *ngIf="addTripForm.get('max')!.hasError('pattern') && (addTripForm.get('max')!.touched)">Podaj prawidłową ilość</p>
+      </div>
+      <div class="trip-info">
+          <label for="price">CENA </label>
+          <input type="number" formControlName="price">
+        <p *ngIf="addTripForm.get('price')!.hasError('required') && (addTripForm.get('price')!.touched )">Podaj cenę</p>
+        <p *ngIf="(addTripForm.get('price')!.hasError('min')|| addTripForm.get('price')!.hasError('max') )&& (addTripForm.get('price')!.touched)">Cena musi być z przedziału od 0 do 12500</p>
+      </div>
+      <div class="trip-info">
+          <label for="description">OPIS </label>
+          <input type="text" formControlName="description">
+        <p *ngIf="addTripForm.get('description')!.hasError('required') && (addTripForm.get('description')!.touched)">Podaj opis</p>
+        <p *ngIf="addTripForm.get('description')!.hasError('minlength') && (addTripForm.get('description')!.touched)">Opis jest za krótki</p>
+      </div>
+      <div class="trip-info">
+          <label for="photo">ZDJĘCIE </label>
+          <input type="text" formControlName="photo">
+        </div>
+        <p  *ngIf="addTripForm.get('photo')!.hasError('required') && (addTripForm.get('photo')!.touched )">Podaj link do zdjęcia</p> 
+      <button  [disabled]="!addTripForm.valid">Dodaj wycieczkę</button>
+    </div>
+  </form>

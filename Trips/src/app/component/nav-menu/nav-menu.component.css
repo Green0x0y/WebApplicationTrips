@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: black;
+    font-family:Arial, Helvetica, sans-serif;
+  }
+  
+  .nav{
+    background-color: rgb(233, 233, 233);
+    border-radius: 10px;
+    padding: 3%;
+    margin-bottom:2%;
+    border: 15px solid rgb(65, 58, 161);
+  border-radius: 20px;
+    display: flex;
+    width:86%;
+    margin-left:2%;  
+    box-shadow: 10px 10px 20px -10px rgb(1, 1, 2);
+  }
+  
+  .nav > form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+  
+  .nav button {
+    border: 0;
+    border-radius: 5px;
+    background-color: rgb(251, 251, 251);
+    padding: 0.5%;
+    font-size: 100%;
+    cursor: pointer;
+    box-shadow: 10px 10px 20px -10px rgb(1, 1, 2);
+  }
+  
+  .nav button:hover {
+    background-color: rgb(213, 213, 213);
+  }
+  
+  .filter {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5%;
+    gap: 5px;
+    padding-bottom: 2%;
+  }
+  
+  .filter >p {
+    font-size: 100%;
+  }
+  
+  .filter> div >input {
+    border: 0;
+    border-radius: 5px;
+    outline: 0;
+    color: black;
+    font-size: 100%;
+    padding: 0.5%;
+  }
+  
+  #choose-currency>p {
+    min-width: 30px;
+    width: 3%;
+    text-align: center;
+    cursor: pointer;
+    background-color: white;
+    padding: 0.5%;
+    font-size: 120%;
+    border: 3px solid transparent;
+    border-radius: 5px;
+    
+    
+  }
+#choose-title, #choose-country, #choose-rating{
+  display: flex;
+  justify-content: flex-start;
+  
+}
+#choose-country> button{
+  padding:1%;
+
+}
+#choose-title{
+  flex-direction: column;
+  align-items: flex-start;
+}
+#choose-curency{
+  display:flex;
+  justify-content: flex-start;
+}
+#reset-filters{
+  margin-top:1%;
+  margin-left:20%;
+  width:30%;
+}
+.bottom{
+  display: flex;
+  flex-direction: row;
+  width:100%;
+}
+

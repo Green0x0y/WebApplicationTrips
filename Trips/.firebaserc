@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "biuro-turystyczne-c34e7": {
+      "hosting": {
+        "trips": [
+          "biuro-turystyczne-c34e7"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "biuro-turystyczne-c34e7"
+  }
+}

@@ -1,0 +1,10 @@
+<button class="manager" routerLink="/add" routerLinkActive="active">Dodaj wycieczkę</button>
+<app-nav-menu></app-nav-menu>
+<section class="listT">
+    <div class="elem" *ngFor="let trip of filtersService.trips | filterTrips:
+    filtersService.countries: filtersService.ratings: filtersService.minPrice: filtersService.maxPrice: 
+    changeCurrencyService.money[changeCurrencyService.moneyNow].multiply">
+    <app-manager-trip [trip]="trip"></app-manager-trip>
+</div>
+</section>
+

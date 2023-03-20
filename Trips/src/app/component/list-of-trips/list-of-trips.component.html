@@ -1,0 +1,8 @@
+<app-nav-menu></app-nav-menu>
+<div class="listT">
+    <div class="elem" *ngFor="let trip of fltS.trips | filterTrips:
+    fltS.countries: fltS.ratings: fltS.minPrice: fltS.maxPrice: 
+    chCurrS.money[chCurrS.moneyNow].multiply">
+        <app-trip [trip] ="trip" (deleteEvent)="delete($event)"></app-trip>
+    </div>  
+</div>

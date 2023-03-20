@@ -1,0 +1,22 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  
+}
+  
+.container {
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+align-items: space-around;
+width: 100%;
+min-width: 800px;
+
+}
+
+.left-container{
+width:25%;
+min-width: 260px;
+}
+

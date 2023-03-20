@@ -1,0 +1,30 @@
+<div class="container">
+    <h1>Rejestracja</h1>
+    <form [formGroup]="signup" (ngSubmit)="submit()">
+      
+      <div class="elem">
+        <label>E-mail</label>
+        <input formControlName="email">
+        <p class="error" *ngIf="signup.get('email')!.hasError('required') &&
+        (signup.get('email')!.touched)">Nie podano adresu e-mail</p>
+      </div>
+      <div class="elem">
+        <label for="password">Hasło</label>
+        <input id="password" type="password" formControlName="password">
+        <p class="error" *ngIf="signup.get('password')!.hasError('required') && (signup.get('password')!.touched)">Nie podano hasła</p>
+      </div>
+      <div class="elem">
+        <label for="secPassword">Powtórz hasło</label>
+        <input id="confirm" type="password" formControlName="secPassword">
+        <p class="error" *ngIf="signup.get('secPassword')!.hasError('required') && (signup.get('secPassword')!.touched )">Powtórz hasło</p>
+        <p class="error" *ngIf="signup.get('secPassword')!.hasError('confirmPassword') &&(signup.get('secPassword')!.touched )">Hasła nie są takie same </p>
+      </div>
+      <div class="elem">
+        <button [disabled]="!signup.valid">Sign up</button>
+      </div>
+      <div class ="elem">
+      <a id="link" routerLink="/login" routerLinkActive="active">Mam już konto</a>
+    </div>
+    </form>
+  </div>
+

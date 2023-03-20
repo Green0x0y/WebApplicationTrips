@@ -1,0 +1,26 @@
+<div class="nav">
+    <form>
+      <div class="filter" id ="choose-country">
+        <p>Wybierz kraj docelowy</p>
+        <br>
+        <button *ngFor="let country of filtersService.countriesList()" (click)="filtersService.filterCountry(country)"
+                [ngStyle]="{'background-color': filtersService.countries.includes(country) ? 'lightgrey' : null}">
+                {{country}}
+        </button>
+      </div>
+      <div class="filter" id="choose-rating">
+        <p>Oceny</p>
+        <button *ngFor="let rating of filtersService.ratingsList()" (click)="filtersService.filterRating(rating)"
+                [ngStyle]="{'background-color': filtersService.ratings.includes(rating) ? 'lightgrey' : null}">
+                {{rating}}
+        </button>
+      </div>
+      <div class = "bottom">
+        <div class="filter">
+          <ngx-slider [(value)]="filtersService.minPrice" [(highValue)]="filtersService.maxPrice"[options]="avilableMoney">
+          </ngx-slider>
+        </div>
+        <button id ="reset-filters" (click)="filtersService.resetFilters()">Resetuj filtry</button>
+      </div>
+    </form>
+  </div>

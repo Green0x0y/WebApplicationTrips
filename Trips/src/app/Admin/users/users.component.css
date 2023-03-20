@@ -1,0 +1,74 @@
+* {
+    font-family:Arial, Helvetica, sans-serif
+  }
+
+  .container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    color: black;
+    border-radius: 30px;
+    align-items: center;
+    background-color: rgb(73, 63, 162);
+    padding: 2%;
+    box-shadow: 10px 10px 20px -10px rgb(1, 1, 2);
+  }
+  h1{
+    color:white;
+  }
+  
+  .users {
+    background-color: white;
+    border-radius:25px;
+    padding: 2%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 1.5%;
+    width:80%;
+    box-shadow: 10px 10px 20px -10px rgb(1, 1, 2);
+
+  }
+  .email {
+    white-space: nowrap;
+    font-size: 150%;
+  }
+  .options {
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-end;
+    gap :5%;
+  }
+  
+  .options>button {
+    background-color: rgb(63, 55, 137);
+    color: white;
+    border: 0;
+    outline: 0;
+    border-radius: 20px;
+    padding: 1%;
+    font-size: 100%;
+    font-weight: bold;
+    cursor: pointer;
+    width:10vw;
+    flex-wrap: nowrap;
+    border: 3px solid rgb(117, 72, 208);
+    box-shadow: 10px 10px 20px -10px rgb(1, 1, 2);
+    
+  }
+  
+  @media screen and ( max-width: 1000px ){
+    .email{
+      font-size: 120%;
+      padding-top:2%;
+    }
+    .users{
+      flex-flow: column;
+      width: 90%;
+    }
+
+    .options>button{
+      width: 20vw;
+    }
+  }
+  

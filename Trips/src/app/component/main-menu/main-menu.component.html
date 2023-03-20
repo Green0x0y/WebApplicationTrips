@@ -1,0 +1,38 @@
+
+  <div class="container">
+    <div class="links" >
+      <a class="link" routerLink="./mainpage" routerLinkActive="active">Home</a>
+      <a class="link" routerLink="./trips" routerLinkActive="active">Wycieczki</a>
+      <a class="link" routerLink="./manager" routerLinkActive="active" *ngIf="user.type >= 1">Manager</a>
+      <a class="link" routerLink="/admin" routerLinkActive="active" *ngIf="user.type >= 2">Admin</a>
+    </div>
+    <div class="cart-money">
+        <span class="wal"
+              (click)="chCurr.current('euro'); filtersService.updatePrice()"
+              [ngStyle]="{'background-color': chCurr.moneyNow== 'euro' ? 'lightgrey' : 'white'}">EURO
+        </span>
+        <span class="wal"
+              (click)="chCurr.current('dollar'); filtersService.updatePrice()"
+              [ngStyle]="{'background-color': chCurr.moneyNow == 'dollar' ? 'lightgrey' : 'white'}">USD
+        </span>
+        <span class="wal"
+              (click)="chCurr.current('zloty'); filtersService.updatePrice()"
+              [ngStyle]="{'background-color': chCurr.moneyNow == 'zloty' ? 'lightgrey' : 'white'}">PLN
+        </span>      
+        <span class = "wal">{{chCurr.sumCount()}}</span>
+        <span class = "wal">{{chCurr.sumCost()*chCurr.money[chCurr.moneyNow].multiply + chCurr.money[chCurr.moneyNow].sign}}</span>
+        <span class = "wal" id ="cart">
+          <a routerLink="./cart" routerLinkActive="active">
+            <img src = "../assets/img/shopping-cart.png">
+          </a> 
+        </span>
+    </div>
+    <div class ="links2">
+    <a class="link2" routerLink="/login" routerLinkActive="active" *ngIf="user.type < 0">Logowanie</a>
+    <a class="link2" routerLink="/signup" routerLinkActive="active" *ngIf="user.type< 0">Rejestracja</a>
+    <p  *ngIf="user.type >= 0">{{user.email}}</p>
+    <a class="link2" (click)="authService.logout()" *ngIf="user.type >= 0" routerLink="mainpage"
+       routerLinkActive="active">Wyloguj</a>
+    </div>
+    
+  </div>

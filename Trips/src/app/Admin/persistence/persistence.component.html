@@ -1,0 +1,9 @@
+<div class="container">
+    <h1>Ustaw Persistence</h1>
+    <button (click)="persServ.setPersistence('local'); persistence='local'"
+            [ngStyle]="{'border-color': persistence == 'local' ? 'white' : null}">Local</button>
+    <button (click)="persServ.setPersistence('session'); persistence='session'"
+            [ngStyle]="{'border-color': persistence == 'session' ? 'white' : null}">Session</button>
+    <button (click)="persServ.setPersistence('none'); persistence='none'"
+            [ngStyle]="{'border-color': persistence == 'none' ? 'white' : null}">None</button>
+  </div>
