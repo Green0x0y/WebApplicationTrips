@@ -1,7 +1,7 @@
 
 # Travel Agency Web Application
 
-This project is an online platform for a travel agency where users can book various trips and also give their feedback. In addition, the platform has an administrative account that allows full management of all user accounts. The management account allows editing trips and introducing new offers to the users.
+This project is an online platform for a travel agency where users can book various trips and also give their feedback. In addition, the platform has an administrative account that allows full management of all users' accounts. The management account allows editing trips and introducing new offers to the users.
 
 ![MainPage2](https://user-images.githubusercontent.com/66325429/226611652-5aead89e-f086-437c-ae7a-92cf944b9d98.png)
 
