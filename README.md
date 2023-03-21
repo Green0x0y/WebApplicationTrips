@@ -1,4 +1,19 @@
-# Trips
+
+# Travel Agency Web Application
+
+This project is an online platform for a travel agency where users can book various trips and also give their feedback. In addition, the platform has an administrative account that allows full management of all user accounts. The management account allows editing trips and introducing new offers to the users.
+
+![MainPage2](https://user-images.githubusercontent.com/66325429/226611652-5aead89e-f086-437c-ae7a-92cf944b9d98.png)
+
+
+## Technologies Used
+- HTML
+- CSS
+- TypeScript
+- Angular
+- Firebase
+
+# Instructions
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.0.
 
@@ -25,3 +40,5 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+
